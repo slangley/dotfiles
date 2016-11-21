@@ -1,6 +1,6 @@
 [user]
-  name = Jeff Geerling
-  email = geerlingguy@mac.com
+  name = Sean Langley
+  email = slangley@popcornlabs.com
 [core]
   editor = vi
   excludesfile = ~/.gitignore
