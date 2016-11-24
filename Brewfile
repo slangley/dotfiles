@@ -23,3 +23,7 @@ brew cask install google-chrome
 brew cask install logitech-options
 brew cask install flux
 brew cask install choosy
+brew cask install licecap
+brew cask install webstorm
+brew cask install intellij
+brew cask install appcode
