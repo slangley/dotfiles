@@ -75,6 +75,7 @@ fi
 
 # Use brew-installed PHP binaries.
 export PATH="$brew_prefix/opt/php56/bin:$PATH"
+export PATH="$PATH:node_modules/.bin"
 
 # Use nvm.
 export NVM_DIR="$HOME/.nvm"
