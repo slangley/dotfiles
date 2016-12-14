@@ -1,6 +1,6 @@
 [user]
   name = Sean Langley
-  email = sean.langley@bmo.com
+  email = slangley@popcornlabs.com
 [core]
   editor = vi
   excludesfile = ~/.gitignore
