@@ -6,7 +6,13 @@
 #
 
 # Nicer prompt.
-export PS1="\[\e[0;32m\]\]\[\] \[\e[1;32m\]\]\t \[\e[0;2m\]\]\w \[\e[0m\]\]\[$\] "
+
+export GITAWAREPROMPT=~/.dotfiles/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+#export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "
+export PS1="\[$txtgrn\]\[\] \t \[\e[0;2m\]\]\w \[\e[0m\]\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty \[$txtgrn\]\r\n\$ \[$txtrst\]"
+#export PS1="\[$txtgrn\]\[\] \t \[\e[0;2m\]\]\w \[\e[0m\]\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty \[$txtgrn\]\$ \[$txtrst\]"
 
 # Use colors.
 export CLICOLOR=1
@@ -69,6 +75,7 @@ fi
 
 # Use brew-installed PHP binaries.
 export PATH="$brew_prefix/opt/php56/bin:$PATH"
+export PATH="$PATH:node_modules/.bin"
 
 # Use nvm.
 export NVM_DIR="$HOME/.nvm"
@@ -106,3 +113,5 @@ prod_command_trap () {
 }
 shopt -s extdebug
 trap prod_command_trap DEBUG
+
+alias cmsmw='cd ~/Clients/BMO/MSMO/msmwapp'
