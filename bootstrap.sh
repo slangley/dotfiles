@@ -12,6 +12,7 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
     --exclude "git-aware-prompt" \
+    --exclude "Brewfile" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }

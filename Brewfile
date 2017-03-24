@@ -18,6 +18,7 @@ brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
 brew install nvm
+brew install npm
 
 brew cask install google-chrome
 brew cask install logitech-options
