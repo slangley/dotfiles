@@ -114,5 +114,6 @@ prod_command_trap () {
 shopt -s extdebug
 trap prod_command_trap DEBUG
 
-alias cmsmw='cd ~/Clients/BMO/MSMO/msmwapp'
+alias cmsmw='cd ~/Clients/BMO/MSMO/'
+alias clsb='cd ~/Clients/BMO/LSB/'
 alias derp='rm -rf ~/Library/Developer/Xcode/DerivedData'
